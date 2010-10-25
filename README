@@ -3,3 +3,7 @@ if they don't know which one to attend.  It's very lightweight so it can be used
 CodeMash WIFI (since we all know what that's like).
 
 Codemasher uses the CodeMash REST API: http://codemash.org/rest
+
+Until the full schedule is released, the application will return any session at random.  Once the schedule has been
+integrated into the REST API, the application will return based on more criteria, such as NEXT AVAILABLE SESSIONS, 
+CURRENT SESSIONS and possibly a filter on technology, track, difficulty or searching all text fields.
