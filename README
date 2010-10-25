@@ -1,0 +1,5 @@
+CodeMasher is a simple rails 3 application that lets attendees of the conference, CodeMash, look for random sessions 
+if they don't know which one to attend.  It's very lightweight so it can be used from mobile phones and using the 
+CodeMash WIFI (since we all know what that's like).
+
+Codemasher uses the CodeMash REST API: http://codemash.org/rest
