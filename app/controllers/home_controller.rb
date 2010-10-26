@@ -1,7 +1,9 @@
 class HomeController < ApplicationController
 
-  def index
-    Session.find(:all);
+  def index    
+    sessions = Session.all
+    offset = rand(sessions.size)
+    @ses = sessions[offset]
   end
 
 end
