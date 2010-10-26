@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-Codemasher::Application.config.secret_token = '20c3ac163eaa895964bcfbc0eb55ed9d6347a4dbeecf115facbca9cae6bfdb382fa2466550c3821547bbc56235e1b6d62c997edda4d12cfbb435c93c9b9d6f6c'
+Codemasher::Application.config.secret_token = '12c9401e77b394542d0506e1f60b58016f15ef4dddca3b33b9587e34cdc8b66229b19cd48e32cb4c85a0bf7e740f06ae9f4718b0a4eac19075677f89edbd40f9'
