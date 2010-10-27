@@ -4,7 +4,8 @@
 	<p><strong>Why don't you attend:</strong></p>
 	<div class="session-info">
 		<h2><%= @ses.Title %></h2>	
-		<h3>by <%= @ses.SpeakerName %> in <%= @ses.Room %> at <%= @ses.Start %></h3>
+		<h3>by <%= @ses.SpeakerName %></h3>
 		<p style="text-align:justify"><%= @ses.Abstract %></p>
 	</div>
+	<%= link_to "I'm not interested in this session", root_url %>
 </div>
