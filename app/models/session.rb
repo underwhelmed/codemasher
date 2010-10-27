@@ -3,7 +3,12 @@ class Session < ActiveResource::Base
   self.format = :json
   
   def self.all_cached
-    Rails.cache.fetch('Sessions.all') { all }
+    sessions = Rails.cache.read("Sessions.all")
+    if (sessions.nil?)
+      sessions = Session.all
+      Rails.cache.write('Sessions.all', sessions)
+    end
+    sessions
   end
   
 end

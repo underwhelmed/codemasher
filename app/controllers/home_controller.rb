@@ -1,7 +1,7 @@
 class HomeController < ApplicationController
 
   def index        
-    @ses = Session.all.shuffle.first
+    @ses = Session.all_cached.shuffle.first
   end
 
 end
