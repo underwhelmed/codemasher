@@ -1,9 +1,10 @@
-<h1>Welcome to CodeMasher</h1>
-<p>This app will generate a random session for you to view.</p>
-
-<p>Why don't you attend
-<b><%= @ses.Title %></b>
-</p>
-
-
-
+<div style="margin: 0 auto; width: 400px; border: solid 1px #A0A0A8;padding:0px 15px 15px 15px;text-align:center">
+	<h1>Welcome to CodeMasher</h1>
+	<p><em>This app will generate a random session for you to go to since there are so many great sessions.</em></p>
+	<p><strong>Why don't you attend:</strong></p>
+	<div class="session-info">
+		<h2><%= @ses.Title %></h2>	
+		<h3>by <%= @ses.SpeakerName %> in <%= @ses.Room %> at <%= @ses.Start %></h3>
+		<p style="text-align:justify"><%= @ses.Abstract %></p>
+	</div>
+</div>

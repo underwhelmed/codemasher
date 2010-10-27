@@ -1,9 +1,7 @@
 class HomeController < ApplicationController
 
-  def index    
-    sessions = Session.all
-    offset = rand(sessions.size)
-    @ses = sessions[offset]
+  def index        
+    @ses = Session.all.shuffle.first
   end
 
 end

@@ -1,0 +1,9 @@
+html,body{height:100%;color:black;}
+body{background-color:white;font:13.34px helvetica,arial,freesans,clean,sans-serif;*font-size:small;}
+.session-info{
+	border:solid 1px #f91e06; 
+	background:#EFEFEF;
+	color:#222222;
+	padding:8px;
+	text-align:center;
+}
