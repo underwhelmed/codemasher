@@ -5,5 +5,5 @@ gem 'sqlite3' # even though we don't really need it
 
 group :production do
   gem 'memcache-client'
-  gem 'memcached-northscale', :require => 'memcached'
+  gem 'dalli', :require => 'memcached'
 end
