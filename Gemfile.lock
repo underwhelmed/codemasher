@@ -32,6 +32,7 @@ GEM
       activesupport (~> 3.0.0)
     builder (2.1.2)
     dalli (0.10.1)
+    diff-lcs (1.1.2)
     erubis (2.6.6)
       abstract (>= 1.0.0)
     ffi (0.6.3)
@@ -41,8 +42,8 @@ GEM
       activesupport (>= 2.3.6)
       mime-types
       treetop (>= 1.4.5)
-    memcache-client (1.8.5)
     mime-types (1.16)
+    nokogiri (1.4.3.1)
     polyglot (0.3.1)
     rack (1.2.1)
     rack-mount (0.6.13)
@@ -63,18 +64,36 @@ GEM
       rake (>= 0.8.4)
       thor (~> 0.14.0)
     rake (0.8.7)
+    rspec (2.0.1)
+      rspec-core (~> 2.0.1)
+      rspec-expectations (~> 2.0.1)
+      rspec-mocks (~> 2.0.1)
+    rspec-core (2.0.1)
+    rspec-expectations (2.0.1)
+      diff-lcs (>= 1.1.2)
+    rspec-mocks (2.0.1)
+      rspec-core (~> 2.0.1)
+      rspec-expectations (~> 2.0.1)
+    rspec-rails (2.0.1)
+      rspec (~> 2.0.0)
     sqlite3 (0.1.1)
       ffi (>= 0.6.3)
     thor (0.14.3)
     treetop (1.4.8)
       polyglot (>= 0.3.1)
     tzinfo (0.3.23)
+    webrat (0.7.2)
+      nokogiri (>= 1.2.0)
+      rack (>= 1.0)
+      rack-test (>= 0.5.3)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   dalli
-  memcache-client
   rails (= 3.0.1)
+  rspec (= 2.0.1)
+  rspec-rails (= 2.0.1)
   sqlite3
+  webrat (= 0.7.2)
